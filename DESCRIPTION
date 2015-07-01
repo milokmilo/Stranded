@@ -1,0 +1,10 @@
+Package: Stranded
+Type: Package
+Title: Calculate Biological Parameters from Stranded Cetaceans
+Version: 0.1
+Date: 2015-07-01
+Author: Camilo Saavedra 
+Maintainer: Camilo Saavedra <camilo.saavedra@vi.ieo.es>
+Depends: R (>= 3.1.0), MASS, mvtnorm, corpcor, numDeriv, stats, boot
+Description: Calculates biological parameters from stranded marine mammals, mainly dolphins with a fairly good sample size. The package calculates the mortality at age of the population based on life tables and Siler and/or Heligman-Pollard functions, assuming bycatch or other threat that cause an extra mortality
+License: GPL (>=2)
