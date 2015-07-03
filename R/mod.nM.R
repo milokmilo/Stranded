@@ -1,19 +1,14 @@
-#'  Helligman Pollard plot
+#' Helligman Pollard mortality function 
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
+#' Helligman Pollard mortality function. Modified from HPbayes_0.1
 #' @param age
 #' @param hpp
-#' @keywords Heligman Pollard plot
+#' @keywords Heligman Pollard mortality
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from HPbayes_0.1 package
+#' mod.nM()
 
-
-mod.nM <- function (theta, x) 
-{
+mod.nM <- function (theta, x) {
   A <- theta[1]
   B <- theta[2]
   C <- theta[3]

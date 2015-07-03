@@ -2,26 +2,21 @@
 % Please edit documentation in R/mod.bc.R
 \name{mod.bc}
 \alias{mod.bc}
-\title{Helligman Pollard plot}
+\title{Helligman Pollard model function}
 \usage{
 mod.bc(theta, x)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{theta}{}
 
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{x}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Helligman Pollard model function. Modified from HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+mod.bc()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
 

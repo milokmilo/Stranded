@@ -1,15 +1,12 @@
-#'  Helligman Pollard plot
+#' Parameter from bootstraped Siler mortality
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Calculate parameters of bootstraped Siler mortality
+#' @param boot.out
+#' @param conf Default = 0.95
+#' @keywords Siler mortality bootstrap parameters
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# calculate parameters of bootstraped Siler mortality
+#' parBoot()
 
 parBoot <- function(boot.out, conf = 0.95){
   matrixPar <- cbind(seq(1:ncol(boot.out$t)), 

@@ -2,26 +2,23 @@
 % Please edit documentation in R/percBootCI.R
 \name{percBootCI}
 \alias{percBootCI}
-\title{Helligman Pollard plot}
+\title{Percentages of bootstraped Siler mortality}
 \usage{
 percBootCI(boot.out, conf = 0.95)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{boot.out}{}
 
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{conf}{Default = 0.95}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Calculate percentages from bootstraped Siler mortality
 }
 \examples{
-hpbayes.plot9()
+percBootCI()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{Siler}
+\keyword{bootstrap}
+\keyword{mortality}
+\keyword{percentage}
 

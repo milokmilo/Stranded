@@ -2,27 +2,33 @@
 % Please edit documentation in R/like.resamp9.R
 \name{like.resamp9}
 \alias{like.resamp9}
-\title{Helligman Pollard plot}
+\title{Life table resampling}
 \usage{
 like.resamp9(K, log.like.0, opt.cov.d, opt.mu.d, d.keep, d = 10,
   theta.dim = 9)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{K}{}
 
-\item{ndeath.}{Default = NULL}
+\item{log.like.0}{}
 
-\item{age}{}
+\item{opt.cov.d}{}
 
-\item{hpp}{}
+\item{opt.mu.d}{}
+
+\item{d.keep}{}
+
+\item{d}{Default = 10}
+
+\item{thete.dim}{Default = 9}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Life table resampling. Modified from like.resamp.R of HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+like.resamp9()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{life}
+\keyword{resampling}
+\keyword{table}
 

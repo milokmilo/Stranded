@@ -2,27 +2,33 @@
 % Please edit documentation in R/samp.postopt9.R
 \name{samp.postopt9}
 \alias{samp.postopt9}
-\title{Helligman Pollard plot}
+\title{Post-sampling of Helligman Pollard model}
 \usage{
 samp.postopt9(opt.cov.d, opt.mu.d, d.keep, prior, B = 400, B0 = 8000,
   d = 10)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{opt.cov.d}{}
 
-\item{ndeath.}{Default = NULL}
+\item{opt.mu.d}{}
 
-\item{age}{}
+\item{d.keep}{}
 
-\item{hpp}{}
+\item{prior}{}
+
+\item{B}{Default = 400}
+
+\item{B0}{Default = 8000}
+
+\item{d}{Default = 10}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Post-sampling of Helligman Pollard model. Modified from samp.postopt.R of HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+samp.postopt9()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
+\keyword{post-sampling}
 

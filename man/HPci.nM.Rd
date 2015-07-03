@@ -2,26 +2,25 @@
 % Please edit documentation in R/HPci.nM.R
 \name{HPci.nM}
 \alias{HPci.nM}
-\title{Helligman Pollard plot}
+\title{Helligman Pollard confidence intervals}
 \usage{
 HPci.nM(data, age = age, CI = 95)
 }
 \arguments{
-\item{age}{}
+\item{data}{}
 
-\item{nrisk.}{Default = NULL}
+\item{age}{Default = age}
 
-\item{ndeath.}{Default = NULL}
-
-\item{hpp}{}
+\item{CI}{Confidence intervals. Default = 95}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Helligman Pollard confidence intervals. Original function from HPbayes_0.1
 }
 \examples{
-hpbayes.plot9()
+HPci.nM()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
+\keyword{confidence}
+\keyword{intervals}
 

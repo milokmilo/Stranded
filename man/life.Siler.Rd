@@ -2,26 +2,20 @@
 % Please edit documentation in R/life.Siler.R
 \name{life.Siler}
 \alias{life.Siler}
-\title{Helligman Pollard plot}
+\title{Siler life table}
 \usage{
 life.Siler(Sqx = DDESiler)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
-
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{Sqx}{Default = DDESiler}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Siler life table
 }
 \examples{
-hpbayes.plot9()
+life.Siler()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{Siler}
+\keyword{life}
+\keyword{table}
 

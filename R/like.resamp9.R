@@ -1,16 +1,17 @@
-#'  Helligman Pollard plot
+#' Life table resampling
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Life table resampling. Modified from like.resamp.R of HPbayes_0.1 package
+#' @param K
+#' @param log.like.0
+#' @param opt.cov.d
+#' @param opt.mu.d
+#' @param d.keep
+#' @param d Default = 10
+#' @param thete.dim Default = 9
+#' @keywords life table resampling
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from like.resamp.R of HPbayes_0.1 package
-
+#' like.resamp9()
 
 like.resamp9 <- function (K, log.like.0, opt.cov.d, opt.mu.d, d.keep, d = 10, 
                           theta.dim = 9) 

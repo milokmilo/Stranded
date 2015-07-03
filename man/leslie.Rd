@@ -2,27 +2,32 @@
 % Please edit documentation in R/leslie.R
 \name{leslie}
 \alias{leslie}
-\title{Helligman Pollard plot}
+\title{Leslie matrix}
 \usage{
 leslie(lx, mx, L = TRUE, peryear = 5, one.sex = TRUE, SRB = 1.05,
   infant.class = TRUE)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{lx}{}
 
-\item{ndeath.}{Default = NULL}
+\item{mx}{}
 
-\item{age}{}
+\item{L}{Default = TRUE}
 
-\item{hpp}{}
+\item{peryear}{Default = 5}
+
+\item{one.sex}{Default = TRUE}
+
+\item{SRB}{Default = 1.05}
+
+\item{infant.class}{Default = TRUE}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Leslie matrix. Modified from leslie.matrix.R of demoR_0.4.2
 }
 \examples{
-hpbayes.plot9()
+leslie()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{Leslie}
+\keyword{matrix}
 

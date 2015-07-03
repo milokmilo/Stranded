@@ -2,7 +2,7 @@
 % Please edit documentation in R/ll.binom.R
 \name{ll.binom}
 \alias{ll.binom}
-\title{Helligman Pollard plot}
+\title{Density binomial}
 \usage{
 ll.binom(x, n, p)
 }
@@ -16,10 +16,10 @@ ll.binom(x, n, p)
 \item{hpp}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Density binomial. Original script from HPbayes_0.1
 }
 \examples{
-hpbayes.plot9()
+ll.binom()
 }
 \keyword{Heligman}
 \keyword{Pollard}

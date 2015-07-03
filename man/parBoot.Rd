@@ -2,26 +2,23 @@
 % Please edit documentation in R/parBoot.R
 \name{parBoot}
 \alias{parBoot}
-\title{Helligman Pollard plot}
+\title{Parameter from bootstraped Siler mortality}
 \usage{
 parBoot(boot.out, conf = 0.95)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{boot.out}{}
 
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{conf}{Default = 0.95}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Calculate parameters of bootstraped Siler mortality
 }
 \examples{
-hpbayes.plot9()
+parBoot()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{Siler}
+\keyword{bootstrap}
+\keyword{mortality}
+\keyword{parameters}
 

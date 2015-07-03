@@ -2,26 +2,21 @@
 % Please edit documentation in R/life.tab.R
 \name{life.tab}
 \alias{life.tab}
-\title{Helligman Pollard plot}
+\title{Life table for Leslie matrix}
 \usage{
 life.tab(x)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
-
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{x}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Life table for Leslie matrix. Modified from life.table.R of demoR_0.4.2
 }
 \examples{
-hpbayes.plot9()
+life.tab()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{Leslie}
+\keyword{life}
+\keyword{matrix}
+\keyword{tale}
 

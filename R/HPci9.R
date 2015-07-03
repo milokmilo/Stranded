@@ -1,16 +1,13 @@
-#'  Helligman Pollard plot
+#' Helligman Pollard confidence intervals with 9 parameters
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
+#' Helligman Pollard confidence intervals with 9 parameters. Modified from HPci9 of HPbayes_0.1
+#' @param data
 #' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' @param CI Confidence intervals. Default = 95
+#' @keywords Heligman Pollard confidence intervals
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# new function for HPbayes
-
+#' HPci9()
 
 HPci9 <- function(data, age=age, CI=95){
   loCI <- ((100 - CI)/2)/100

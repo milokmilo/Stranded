@@ -1,20 +1,18 @@
-#'  Helligman Pollard plot
+#' Helligman Pollard 9 parameters priors
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Helligman Pollard 9 parameters priors. Modified from prior.likewts.R of HPbayes_0.1 package
+#' @param prior
+#' @param nrisk
+#' @param ndeath 
+#' @param theta.dim Default = 9
+#' @param age Default = c(1e-05, 1, seq(5, 100, 5)) 
+#' @keywords Heligman Pollard priors
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from prior.likewts.R of HPbayes_0.1 package
+#' prior.likewts9()
 
-
-prior.likewts9 <- function (prior, nrisk, ndeath, theta.dim = 9, age = c(1e-05, 
-                                                                         1, seq(5, 100, 5))) 
-{
+prior.likewts9 <- function (prior, nrisk, ndeath, 
+                            theta.dim = 9, age = c(1e-05, 1, seq(5, 100, 5))) {
   lx <- nrisk
   dx <- ndeath
   mp8.mle <- function(theta, x.fit = age) {

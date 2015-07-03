@@ -2,27 +2,29 @@
 % Please edit documentation in R/prior.likewts9.R
 \name{prior.likewts9}
 \alias{prior.likewts9}
-\title{Helligman Pollard plot}
+\title{Helligman Pollard 9 parameters priors}
 \usage{
 prior.likewts9(prior, nrisk, ndeath, theta.dim = 9, age = c(1e-05, 1, seq(5,
   100, 5)))
 }
 \arguments{
-\item{age}{}
+\item{prior}{}
 
-\item{nrisk.}{Default = NULL}
+\item{nrisk}{}
 
-\item{ndeath.}{Default = NULL}
+\item{ndeath}{}
 
-\item{hpp}{}
+\item{theta.dim}{Default = 9}
+
+\item{age}{Default = c(1e-05, 1, seq(5, 100, 5))}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Helligman Pollard 9 parameters priors. Modified from prior.likewts.R of HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+prior.likewts9()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
+\keyword{priors}
 

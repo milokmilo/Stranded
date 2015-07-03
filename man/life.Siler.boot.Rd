@@ -2,24 +2,18 @@
 % Please edit documentation in R/life.Siler.boot.R
 \name{life.Siler.boot}
 \alias{life.Siler.boot}
-\title{Helligman Pollard plot}
+\title{Bootstrap of Siler life table}
 \usage{
 life.Siler.boot(bootM)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
-
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{booM}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Bootstrap of Siler life table
 }
 \examples{
-hpbayes.plot9()
+life.Siler.boot()
 }
 \keyword{Heligman}
 \keyword{Pollard}

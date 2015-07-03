@@ -2,26 +2,21 @@
 % Please edit documentation in R/mod9p.R
 \name{mod9p}
 \alias{mod9p}
-\title{Helligman Pollard plot}
+\title{Helligman Pollard 9 poarameters model function}
 \usage{
 mod9p(theta, x)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{theta}{}
 
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{x}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Helligman Pollard 9 poarameters model function. Modified from mod8p.R of HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+mod9p()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
 

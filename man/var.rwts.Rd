@@ -2,26 +2,20 @@
 % Please edit documentation in R/var.rwts.R
 \name{var.rwts}
 \alias{var.rwts}
-\title{Helligman Pollard plot}
+\title{Helligman Pollard variance weights}
 \usage{
 var.rwts(w)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
-
-\item{ndeath.}{Default = NULL}
-
-\item{age}{}
-
-\item{hpp}{}
+\item{w}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Variances weights of Helligman Pollard model. Original script from HPbayes_0.1
 }
 \examples{
-hpbayes.plot9()
+var.rwts()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
+\keyword{weights}
 

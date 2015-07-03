@@ -2,25 +2,29 @@
 % Please edit documentation in R/loop.optim9.R
 \name{loop.optim9}
 \alias{loop.optim9}
-\title{Helligman Pollard plot}
+\title{Loop optimization}
 \usage{
 loop.optim9(prior, nrisk, ndeath, d = 10, theta.dim = 9, age = c(1e-05, 1,
   seq(5, 100, 5)))
 }
 \arguments{
-\item{age}{}
+\item{prior}{}
 
-\item{nrisk.}{Default = NULL}
+\item{nrisk}{}
 
-\item{ndeath.}{Default = NULL}
+\item{ndeath}{}
 
-\item{hpp}{}
+\item{d}{Default = 10}
+
+\item{theta.dim}{Default = 9}
+
+\item{age}{Default = c(1e-05, 1, seq(5, 100, 5))}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Loop optimization. modified from loop.optim.R of HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+loop.optim9()
 }
 \keyword{Heligman}
 \keyword{Pollard}

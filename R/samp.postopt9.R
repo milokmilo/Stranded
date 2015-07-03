@@ -1,19 +1,20 @@
-#'  Helligman Pollard plot
+#' Post-sampling of Helligman Pollard model
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Post-sampling of Helligman Pollard model. Modified from samp.postopt.R of HPbayes_0.1 package
+#' @param opt.cov.d
+#' @param opt.mu.d 
+#' @param d.keep
+#' @param prior 
+#' @param B Default = 400
+#' @param B0 Default = 8000
+#' @param d Default = 10
+#' @keywords Heligman Pollard post-sampling
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from samp.postopt.R of HPbayes_0.1 package
+#' samp.postopt9()
 
-
-samp.postopt9 <- function (opt.cov.d, opt.mu.d, d.keep, prior, B = 400, B0 = 8000, 
-                           d = 10) 
+samp.postopt9 <- function (opt.cov.d, opt.mu.d, d.keep, prior, 
+                           B = 400, B0 = 8000, d = 10) 
 {
   lo <- apply(prior, 2, min)
   hi <- apply(prior, 2, max)

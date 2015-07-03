@@ -1,15 +1,11 @@
-#'  Helligman Pollard plot
+#' Siler life table
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Siler life table
+#' @param Sqx Default = DDESiler
+#' @keywords Siler life table
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# Siler life table
+#' life.Siler()
 
 life.Siler <- function (Sqx=DDESiler){ 
   ## Sqx = Siler mortality vector

@@ -1,15 +1,11 @@
-#'  Helligman Pollard plot
+#' Bootstrap of Siler life table
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
+#' Bootstrap of Siler life table
+#' @param booM
 #' @keywords Heligman Pollard plot
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# save all bootstraped Siler life tables
+#' life.Siler.boot()
 
 life.Siler.boot <- function(bootM){
   ## bootM = expanded data frame created with boot.M (boot.M object)

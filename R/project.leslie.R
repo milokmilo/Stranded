@@ -1,14 +1,14 @@
-#'  Helligman Pollard plot
+#' Project Leslie matrix
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Project Leslie matrix. Original from demoR_0.4.2
+#' @param A 
+#' @param no
+#' @param tmax
+#' @param pop.sum Default = FALSE
+#' @keywords Leslie matrix projection
 #' @export
 #' @examples
-#' hpbayes.plot9()
+#' project.leslie()
 
 project.leslie <- function(A,no,tmax,pop.sum=FALSE){
   if(length(no) != dim(A)[1])

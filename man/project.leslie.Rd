@@ -2,26 +2,26 @@
 % Please edit documentation in R/project.leslie.R
 \name{project.leslie}
 \alias{project.leslie}
-\title{Helligman Pollard plot}
+\title{Project Leslie matrix}
 \usage{
 project.leslie(A, no, tmax, pop.sum = FALSE)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{A}{}
 
-\item{ndeath.}{Default = NULL}
+\item{no}{}
 
-\item{age}{}
+\item{tmax}{}
 
-\item{hpp}{}
+\item{pop.sum}{Default = FALSE}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Project Leslie matrix. Original from demoR_0.4.2
 }
 \examples{
-hpbayes.plot9()
+project.leslie()
 }
-\keyword{Heligman}
-\keyword{Pollard}
-\keyword{plot}
+\keyword{Leslie}
+\keyword{matrix}
+\keyword{projection}
 

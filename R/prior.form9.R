@@ -1,16 +1,13 @@
-#'  Helligman Pollard plot
+#' Priors for Helligman Pollard
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Calculate priors for Heligman Pollard model. Modified from prior.form.R of HPbayes_0.1 package
+#' @param pri.lo Default = c(0, 0, 0, 0.001, 0, 0, 15, 0, 0)
+#' @param pri.hi Default = c(0.15, 1, 1, 0.5, 0.25, 15, 55, 0.1, 1.25)
+#' @param theta.dim Default = 9
+#' @keywords Heligman Pollard priors
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from prior.form.R of HPbayes_0.1 package
-
+#' prior.form9()
 
 prior.form9 <- function (pri.lo = c(0, 0, 0, 0.001, 0, 0, 15, 0, 0), 
                          pri.hi = c(0.15, 1, 1, 0.5, 0.25, 15, 55, 0.1, 1.25), 

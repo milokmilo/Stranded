@@ -1,15 +1,12 @@
-#'  Helligman Pollard plot
+#' Percentages of bootstraped Siler mortality
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Calculate percentages from bootstraped Siler mortality
+#' @param boot.out
+#' @param conf Default = 0.95
+#' @keywords Siler mortality percentage bootstrap
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# calculate percentage of bootstraped Siler mortality
+#' percBootCI()
 
 percBootCI <- function(boot.out, conf = 0.95){
   matrixcis <- cbind(seq(1:ncol(boot.out$t)), 

@@ -1,19 +1,19 @@
-#'  Helligman Pollard plot
+#' Loop optimization
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
+#' Loop optimization. modified from loop.optim.R of HPbayes_0.1 package
+#' @param prior 
+#' @param nrisk
+#' @param ndeath
+#' @param d Default = 10
+#' @param theta.dim Default = 9
+#' @param age Default = c(1e-05, 1, seq(5, 100, 5))
 #' @keywords Heligman Pollard plot
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from loop.optim.R of HPbayes_0.1 package
+#' loop.optim9()
 
-
-loop.optim9 <- function (prior, nrisk, ndeath, d = 10, theta.dim = 9, age = c(1e-05, 
-                                                                              1, seq(5, 100, 5))){
+loop.optim9 <- function (prior, nrisk, ndeath, d = 10, 
+                         theta.dim = 9, age = c(1e-05, 1, seq(5, 100, 5))){
   lx <- nrisk
   dx <- ndeath
   H.k <- prior

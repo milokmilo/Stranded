@@ -2,26 +2,22 @@
 % Please edit documentation in R/mod.nM.R
 \name{mod.nM}
 \alias{mod.nM}
-\title{Helligman Pollard plot}
+\title{Helligman Pollard mortality function}
 \usage{
 mod.nM(theta, x)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
-
-\item{ndeath.}{Default = NULL}
-
 \item{age}{}
 
 \item{hpp}{}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Helligman Pollard mortality function. Modified from HPbayes_0.1
 }
 \examples{
-hpbayes.plot9()
+mod.nM()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
+\keyword{mortality}
 

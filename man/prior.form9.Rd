@@ -2,27 +2,25 @@
 % Please edit documentation in R/prior.form9.R
 \name{prior.form9}
 \alias{prior.form9}
-\title{Helligman Pollard plot}
+\title{Priors for Helligman Pollard}
 \usage{
 prior.form9(pri.lo = c(0, 0, 0, 0.001, 0, 0, 15, 0, 0), pri.hi = c(0.15, 1,
   1, 0.5, 0.25, 15, 55, 0.1, 1.25), theta.dim = 9)
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{pri.lo}{Default = c(0, 0, 0, 0.001, 0, 0, 15, 0, 0)}
 
-\item{ndeath.}{Default = NULL}
+\item{pri.hi}{Default = c(0.15, 1, 1, 0.5, 0.25, 15, 55, 0.1, 1.25)}
 
-\item{age}{}
-
-\item{hpp}{}
+\item{theta.dim}{Default = 9}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Calculate priors for Heligman Pollard model. Modified from prior.form.R of HPbayes_0.1 package
 }
 \examples{
-hpbayes.plot9()
+prior.form9()
 }
 \keyword{Heligman}
 \keyword{Pollard}
-\keyword{plot}
+\keyword{priors}
 

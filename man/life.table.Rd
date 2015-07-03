@@ -2,26 +2,38 @@
 % Please edit documentation in R/life.table.R
 \name{life.table}
 \alias{life.table}
-\title{Helligman Pollard plot}
+\title{Life table for Leslie matrix}
 \usage{
 life.table(x, nDx, nKx, b0 = c(0.07, 1.7), b1 = c(0.053, 2.8),
   b4 = c(1.522, 1.518), type = "kf", nxx = 0, iwidth = 5,
   width12 = c(1, 4))
 }
 \arguments{
-\item{nrisk.}{Default = NULL}
+\item{x}{}
 
-\item{ndeath.}{Default = NULL}
+\item{nDx}{}
 
-\item{age}{}
+\item{nKx}{}
 
-\item{hpp}{}
+\item{b0}{Default = c(0.07,1.7)}
+
+\item{b1}{Default = c(0.053,2.8)}
+
+\item{b4}{Default = c(1.552,1.518)}
+
+\item{type}{Default = "kf}
+
+\item{nxx}{Default = 0}
+
+\item{iwidth}{Default = 5}
+
+\item{width12}{Default = c(1,4)}
 }
 \description{
-Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
+Life table original for Leslie matrix. Original function from demoR_0.4.2
 }
 \examples{
-hpbayes.plot9()
+life.table()
 }
 \keyword{Heligman}
 \keyword{Pollard}

@@ -1,16 +1,17 @@
-#'  Helligman Pollard plot
+#' Leslie matrix
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
-#' @keywords Heligman Pollard plot
+#' Leslie matrix. Modified from leslie.matrix.R of demoR_0.4.2
+#' @param lx
+#' @param mx
+#' @param L Default = TRUE
+#' @param peryear Default = 5
+#' @param one.sex Default = TRUE
+#' @param SRB Default = 1.05
+#' @param infant.class Default = TRUE
+#' @keywords Leslie matrix
 #' @export
 #' @examples
-#' hpbayes.plot9()
-# modified from leslie.matrix.R of demoR_0.4.2 package
-
+#' leslie()
 
 leslie <- function (lx, mx, L = TRUE, peryear = 5, one.sex = TRUE, SRB = 1.05, 
           infant.class = TRUE) 

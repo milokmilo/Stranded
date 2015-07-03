@@ -1,17 +1,22 @@
-#'  Helligman Pollard plot
+#' Life table for Leslie matrix
 #'
-#' Helligman Pollard plot. Modified from hpbayes.plot.R of HPbayes_0.1
-#' @param nrisk. Default = NULL
-#' @param ndeath. Default = NULL
-#' @param age
-#' @param hpp
+#' Life table original for Leslie matrix. Original function from demoR_0.4.2
+#' @param x
+#' @param nDx 
+#' @param nKx
+#' @param b0 Default = c(0.07,1.7)
+#' @param b1 Default = c(0.053,2.8)
+#' @param b4 Default = c(1.552,1.518)
+#' @param type Default = "kf
+#' @param nxx Default = 0
+#' @param iwidth Default = 5
+#' @param width12 Default = c(1,4)
 #' @keywords Heligman Pollard plot
 #' @export
 #' @examples
-#' hpbayes.plot9()
+#' life.table()
  
-`life.table` <-
-function(x, nDx, nKx, b0=c(0.07,1.7), b1=c(0.053,2.8),
+life.table <- function(x, nDx, nKx, b0=c(0.07,1.7), b1=c(0.053,2.8),
   b4=c(1.522,1.518), type="kf",nxx=0, iwidth=5, width12=c(1,4)){
 
  nmax <- length(x)
