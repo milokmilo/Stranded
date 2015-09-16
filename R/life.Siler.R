@@ -41,12 +41,12 @@ life.Siler <- function (Sqx=DDESiler){
   
   # Format for printing
   
-  lifeSiler$qx <- round(life$qx,3)
-  lifeSiler$nx <- round(life$nx,3) 
-  lifeSiler$dx <- round(life$dx,3) 
-  lifeSiler$lx <- round(life$lx,3) 
-  lifeSiler$ex <- round(life$ex,3) 
-  lifeSiler$Z <- round(life$Z,3)
+  lifeSiler$qx <- round(lifeSiler$qx,3)
+  lifeSiler$nx <- round(lifeSiler$nx,3) 
+  lifeSiler$dx <- round(lifeSiler$dx,3) 
+  lifeSiler$lx <- round(lifeSiler$lx,3) 
+  lifeSiler$ex <- round(lifeSiler$ex,3) 
+  lifeSiler$Z <- round(lifeSiler$Z,3)
   
   return(lifeSiler)
 }
