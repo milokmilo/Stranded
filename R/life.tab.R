@@ -17,18 +17,18 @@ life.tab <- function(x){
   for (j in 1:nrow(life)){
     life$S[[j]] <- d-sum(life$M[1:j-1])} 
   ## nx - Standardizing survivors [(N/SumM) * 1000]
-  life$nx <- round((life$S/d)*n,1) 
+  life$nx <- (life$S/d)*n 
   ## dx - Dolphins death-at-age [nx - n(x+1)]
   for (j in 1:nrow(life)) {
     if (j == 1) {dx <- vector("numeric")}
-    d <- round(life$nx[j]-life$nx[j+1],3)
-    if (j == nrow(life)) {d <- round(life$nx[j]-0,3)} 
+    d <- life$nx[j]-life$nx[j+1]
+    if (j == nrow(life)) {d <- life$nx[j]-0} 
     dx <- c(dx,d)}
   life$dx <- dx
   ## qx - Death-at-age probability [dx / nx]
   for (j in 1:nrow(life)) {
     if (j == 1) {qx <- vector("numeric")}
-    q <- round(life$dx[j]/life$nx[j],3)
+    q <- life$dx[j]/life$nx[j]
     qx <- c(qx,q) }
   life$qx <- qx 
   ## lx - Survivorship-at-age percent [nx / n]
@@ -36,17 +36,27 @@ life.tab <- function(x){
   ## ex - Life expentancy at age ex = Sumly/lx
   ex <- vector("numeric")
   for (j in 1:nrow(life)) {
-    e <- round(sum(life$lx[j:nrow(life)])/life$lx[j],3)
+    e <- sum(life$lx[j:nrow(life)])/life$lx[j]
     ex <- c(ex,e) }
   life$ex <- ex
   ## Z - Total mortality-at-age -L(nt/no)/t
   Z <- c(NA)
   for (j in 1:nrow(life)){
     if (j == 1) {Z <- vector("numeric")}
-    z <- round(-log(life$nx[j+1]/life$nx[j])/1,2)
+    z <- -log(life$nx[j+1]/life$nx[j])/1
     if (j == nrow(life)) {z <- 1.00}
     Z <- c(Z,z)
   }
   life$Z <- Z
+  
+  # Format for printing
+  
+  life$qx <- round(life$qx,3)
+  life$nx <- round(life$nx,3) 
+  life$dx <- round(life$dx,3) 
+  life$lx <- round(life$lx,3) 
+  life$ex <- round(life$ex,3) 
+  life$Z <- round(life$Z,3)
+       
   return(life)
 }
