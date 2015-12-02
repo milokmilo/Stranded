@@ -43,3 +43,5 @@ export(prior.likewts9)
 export(project.leslie)
 export(samp.postopt9)
 export(var.rwts)
+export(SilerAtAge)
+
