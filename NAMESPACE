@@ -44,5 +44,5 @@ export(project.leslie)
 export(samp.postopt9)
 export(var.rwts)
 export(SilerAtAge)
-export(CI.boot.M)
+export(CI.boot)
 
