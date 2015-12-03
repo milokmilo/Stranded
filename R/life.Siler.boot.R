@@ -8,7 +8,7 @@
 #' @examples
 #' life.Siler.boot()
 
-life.Siler.boot <- function(bootM, nb=100){
+life.Siler.boot <- function(bootM, nb=100, rm=0){
   ## bootM = expanded data frame created with boot.M (boot.M object)
   ## nb = number of boots
   bootM <- t(bootM)
@@ -18,7 +18,7 @@ life.Siler.boot <- function(bootM, nb=100){
   ls <- list()
   for (i in 1:nb) {
     qx <- bootM[bootM$boot==i,"val"]
-    lifeS <- life.Siler(qx)
+    lifeS <- life.Siler(qx, rm=rm)
     ls[[i]] <- lifeS
   }
   return(ls)

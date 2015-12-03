@@ -8,9 +8,9 @@
 #' @examples
 #' life.Siler()
 
-life.Siler <- function (Sqx, n = 1000){ 
+life.Siler <- function (Sqx, n = 1000, rm=0){ 
   ## Sqx = Siler mortality vector
-  lifeSiler <- data.frame(age=0:(length(Sqx)-1), qx=Sqx)
+  lifeSiler <- data.frame(age=(0+rm):((length(Sqx)-1)+rm), qx=Sqx)
   n <- n
   ## nx and dx - survivors and deaths at age
   for (j in 1:nrow(lifeSiler)){

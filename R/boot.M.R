@@ -9,7 +9,7 @@
 #' boot.M()
 #' 
 
-boot.M <- function(data, SilerPar, boot.n=100, lifeTab){
+boot.M <- function(data, SilerPar, boot.n=100, lifeTab, rm=0){
   a1 <- SilerPar[1]
   b1 <- SilerPar[2]
   a2 <- SilerPar[3]
@@ -17,6 +17,11 @@ boot.M <- function(data, SilerPar, boot.n=100, lifeTab){
   b3 <- SilerPar[5]
   boots <- boot.n
   M <- numeric()
+  if(rm != 0){
+    data <- data[-c(1,rm),]
+    data$age <- data$age - rm
+    data$age1 <- data$age1 - rm
+  }
   nr <- nrow(data)
   n <- round(runif(boots, 2, nr))  
   ag <- data$age

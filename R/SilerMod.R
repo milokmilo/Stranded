@@ -10,7 +10,7 @@
 
 
 SilerMod <- function(par = c(-0.153,1.113,0.131,0.005,0.154),
-                     data = data, method = "Nelder-Mead",
+                     data = data, method = "Nelder-Mead", rm=0,
                      control = list(fnscale = -1, maxit = 10000)){
   optim(par, 
         function(par) {
@@ -19,6 +19,11 @@ SilerMod <- function(par = c(-0.153,1.113,0.131,0.005,0.154),
           a2 <- par[3]
           a3 <- par[4]
           b3 <- par[5]
+          if(rm != 0){
+            data <- data[-c(1,rm),]
+            data$age <- data$age - rm
+            data$age1 <- data$age1 - rm
+          }
           n <- NROW(data)
           S.t <- function(t) {
             return(exp(-a1/b1*(1-exp(-b1*t)))*
