@@ -2,14 +2,14 @@
 #'
 #' Bootstrap Siler mortality
 #' @param data your data 
-#' @param boot.n number of simulations
+#' @param boot.n number of simulations (Default = 100)
 #' @keywords bootstrap
 #' @export
 #' @examples
 #' boot.M()
 #' 
 
-boot.M <- function(data, SilerPar, boot.n, lifeTab){
+boot.M <- function(data, SilerPar, boot.n=100, lifeTab){
   a1 <- SilerPar[1]
   b1 <- SilerPar[2]
   a2 <- SilerPar[3]

@@ -2,14 +2,18 @@
 #'
 #' Bootstrap of Siler life table
 #' @param booM
-#' @keywords Heligman Pollard plot
+#' @param nb number of booststraps (Default = 100)
+#' @keywords lifetable Siler bootstrap
 #' @export
 #' @examples
 #' life.Siler.boot()
 
-life.Siler.boot <- function(bootM){
+life.Siler.boot <- function(bootM, nb=100){
   ## bootM = expanded data frame created with boot.M (boot.M object)
   ## nb = number of boots
+  bootM <- melt(bootM)
+  names(bootM) <- c("boot","age","val")
+  bootM$boot <- as.factor(bootM$boot)
   ls <- list()
   for (i in 1:nb) {
     qx <- bootM[bootM$boot==i,"val"]
