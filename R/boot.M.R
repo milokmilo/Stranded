@@ -26,8 +26,9 @@ boot.M <- function(data, SilerPar, boot.n=100, lifeTab){
     M <- rbind(M, par$par[1]*exp(-par$par[2]*ag) +
                  par$par[3] + par$par[4]*exp(par$par[5]*ag))
   }
-  bootM <- t(as.data.frame(M))
+  bootM <- as.data.frame(t(M))
   rownames(bootM) <- (1:nrow(bootM))-1
+  names(bootM) <- 1:boot.n
   bootM[bootM<0] <- lifeTab[1,"qx"]
   return(bootM)
 }

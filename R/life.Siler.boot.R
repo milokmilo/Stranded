@@ -11,6 +11,7 @@
 life.Siler.boot <- function(bootM, nb=100){
   ## bootM = expanded data frame created with boot.M (boot.M object)
   ## nb = number of boots
+  bootM <- t(bootM)
   bootM <- melt(bootM)
   names(bootM) <- c("boot","age","val")
   bootM$boot <- as.factor(bootM$boot)
