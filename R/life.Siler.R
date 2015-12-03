@@ -1,16 +1,17 @@
 #' Siler life table
 #'
 #' Siler life table
-#' @param Sqx Default = DDESiler
+#' @param Sqx Siler mortality vector
+#' @param n amount of individual in the theoretical population (Default n = 1000)
 #' @keywords Siler life table
 #' @export
 #' @examples
 #' life.Siler()
 
-life.Siler <- function (Sqx=DDESiler){ 
+life.Siler <- function (Sqx, n = 1000){ 
   ## Sqx = Siler mortality vector
   lifeSiler <- data.frame(age=0:(length(Sqx)-1), qx=Sqx)
-  n <- 1000
+  n <- n
   ## nx and dx - survivors and deaths at age
   for (j in 1:nrow(lifeSiler)){
     if (j == 1) {dx <- lifeSiler$qx[1]*n; nx <- n

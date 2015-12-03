@@ -1,17 +1,18 @@
 #' Life table for Leslie matrix
 #'
 #' Life table for Leslie matrix. Modified from life.table.R of demoR_0.4.2
-#' @param x
-#' @keywords life tale Leslie matrix
+#' @param x 
+#' @param n amount of individual in the theoretical population (Default n = 1000)
+#' @keywords life table Leslie matrix
 #' @export
 #' @examples
 #' life.tab()
 
-life.tab <- function(x){
+life.tab <- function(x, n = 1000){
   ## x = data frame with ages and number of deaths
   life <- x
   names(life) <- c("age","M")
-  n <- 1000
+  n <- n
   ## S - Creating survivorship column
   d <- sum(life$M) # sum of deaths
   for (j in 1:nrow(life)){
